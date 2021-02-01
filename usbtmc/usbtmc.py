@@ -272,6 +272,8 @@ class Instrument(object):
         self.connected = False
         self.reattach = []
         self.old_cfg = None
+        
+        self._timeout = 5.0
 
         # quirks
         self.advantest_quirk = False
